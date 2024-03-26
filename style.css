@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(./Assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url(./Assets/fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./Assets/fonts/Roboto-Light.ttf);
+}
+:root {
+    --primary-color : #fff;
+    --secondary-color : #CC2B5E;
+}
+
+body {
+    background-color: #22242A;
+}
+.padding {
+    padding: 20px 40px;
+}
+.mobile-nav {
+    display: none;
+    color: #fff;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo-wrapper{
+    width: 116px;
+    height: 26px;
+    object-fit: contain;
+}
+.desktop-nav ul{
+    display: flex;
+    gap: 40px;
+}
+.desktop-nav ul li a{
+    color: var(--primary-color);
+
+}
+
+/* hero section */
+
+.main {
+    margin-top: 30px;
+}
+.main h1 {
+    font-size: 42px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: Roboto-Medium;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: linear-gradient(90deg, #CC2B5E 0%, #753A88 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    color: var(--primary-color);
+}
+.car-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.engine {
+    margin-bottom: 120px;
+}
+.engine h3 {
+    font-family: Roboto-LightItalic;
+    font-weight: 100;
+    color: #CC2B5E;
+    margin-bottom: 10px;
+}
+.engine h4 {
+    font-family: Roboto-Medium;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+
+}
+.engine p {
+    font-family: Roboto-Light;
+    font-weight: 100;
+    color: var(--primary-color);
+}
+.car img {
+    height: 300px;
+    width: 600px;
+}
+@media screen and (max-width:840px){
+    .car img {
+        height: 200px;
+        width: 400px;
+    }
+    .button a{
+        width: 80px;
+        height: 30px;
+    }
+    .main h1 {
+        font-size: 32px;
+        font-weight: 700;
+}
+}
+@media screen and (max-width:642px){
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .car img {
+        height: 150px;
+        width: 300px;
+    }
+    .button a{
+        width: 80px;
+        height: 25px;
+    }
+    .main h1 {
+        font-size: 22px;
+        font-weight: 700;
+}
+}
+@media screen and (max-width:540px){
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .car img {
+        height: 100px;
+        width: 200px;
+    }
+    .button a{
+        width: 80px;
+        height: 25px;
+    }
+    .main h1 {
+        font-size: 22px;
+        font-weight: 700;
+}
+}
